@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -9,6 +9,11 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
+$primary-headtext-color: #161d6c;
+$primary-headtext2-color: #008dff;
+$primary-text-color: #6a6f83;
+
 
 $primary-color: #480ca8;
 $primary-color-variant: #4cc9f0;

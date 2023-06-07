@@ -1,0 +1,48 @@
+nav {
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+            img {
+                width: 10rem;
+            }
+
+            ul {
+                display: flex;
+                gap: 3rem;
+                align-items: center;
+            }
+
+            a {
+                //color: $white-color;
+                font-weight: 400;
+                font-size: 0.9rem;
+                position: relative;
+                
+                img {
+                    width: 1.2rem;
+                    padding: 0.8rem;
+                    float: left;
+
+                    
+                }
+                
+                  &.ikhebinteresse {
+                    margin-right: 3rem; /* Increase the margin-left value to create a bigger gap */
+                  }
+
+
+            }
+
+
+    }
+}
