@@ -6,7 +6,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
     color: $dark-color;
-    background: rgba($primary-color-variant, 0.1);
+
     user-select: none;
 }
 
@@ -43,6 +43,20 @@ section {
 
 .btn-primary {
     @include button($white-color, $primary-color);
+}
+
+/* ================= MEDIA QUERIES (BASE DEVICES) ================= */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: $container-md;
+    }
+
+    section {
+        & > p {
+            width: 55%;
+        }
+    }
 }
 
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */

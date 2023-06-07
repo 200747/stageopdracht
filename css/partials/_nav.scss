@@ -2,43 +2,53 @@ nav {
     width: 100vw;
     height: 5rem;
     position: fixed;
-    z-index: 10;
+    z-index: 99;
     display: grid;
     place-items: center;
+    background-color: white;
 
 
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
             img {
                 width: 10rem;
             }
 
             ul {
                 display: flex;
-                gap: 3rem;
                 align-items: center;
+                gap: 2rem;
+
+                li.hidden-li {
+                    color: $primary-headtext-color;
+                }
+
+                a.hidden-li {
+                    color: $primary-color-variant;
+                }
+
+                object {
+                    width: 1.2rem;
+                    float: left;
+                    margin: 0.22rem 0.35rem 0.22rem 0.22rem;
+                }
             }
 
+
             a {
-                //color: $white-color;
-                font-weight: 400;
+                font-weight: 800;
                 font-size: 0.9rem;
                 position: relative;
                 
-                img {
-                    width: 1.2rem;
-                    padding: 0.8rem;
-                    float: left;
 
-                    
-                }
                 
                   &.ikhebinteresse {
                     margin-right: 3rem; /* Increase the margin-left value to create a bigger gap */
                   }
+
+
 
 
             }
@@ -46,3 +56,44 @@ nav {
 
     }
 }
+
+/* ================= MEDIA QUERIES (BASE DEVICES) ================= */
+
+@media screen and (max-width: 1200px) {
+    nav {
+        .container {
+            a {
+            &.ikhebinteresse {
+                margin-right: 2rem; /* Increase the margin-left value to create a bigger gap */
+            }
+        }
+        }
+    }
+}
+
+/* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+
+@media screen and (max-width: 1024px) {
+    nav {
+        .container {
+                    ul {
+                        gap: 0.2rem;
+
+                         li.hidden-li, a.hidden-li  {
+                            display: none;
+                            position: fixed;
+                        }
+
+                        object {
+                            width: 1.2rem;
+                            float: left;
+                            margin: 0.22rem 0.22rem 0.22rem 0.22rem;
+                        }
+
+                    }
+                }
+            }
+        }
+    
+    
+
