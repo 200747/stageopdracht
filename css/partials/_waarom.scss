@@ -1,19 +1,19 @@
 section {
-    height: 100vh;
+
     display: grid;
     place-items: center;
     overflow: hidden;
 
     .container {
-        margin-top: 3rem;
+        margin-top: 8rem;
         display: grid;
-        grid-template-columns: 36% 56%;
-        gap: 8%;
+        grid-template-columns: 40% 55%;
+        gap: 4%;
         align-items: center;
         justify-content: space-between;
 
         .section_content {
-            width: 40rem;
+            width: 100%;
             h1 {
                 font-size: 2rem;
                 line-height: 1.1;
@@ -22,13 +22,13 @@ section {
             }
 
             p {
-                margin: 1rem 0 2rem;
+                margin: 2rem 0 3rem;
                 color: $gray-color;
                 font-size: 1.1rem;
             }   
 
             a {
-                margin-top: 2rem;
+                margin-top: 3rem;
                 font-weight: 500;
             }
 
@@ -51,29 +51,27 @@ section {
         }
 
         .section_image {
-            width: 27rem;
-            
+            width: 100%;
         }
     }
 }
 
-/* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+/* ================= MEDIA QUERIES (BASE DEVICES) ================= */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     section {
-        height: 150vh;
-
+        height: 85vh;
         .container {
             margin-top: 3rem;
             display: grid;
-            grid-template-columns: 36% 64%;
-            gap: 8%;
+            grid-template-columns: 40% 60%;
+            gap: 4%;
             align-items: center;
             justify-content: space-between;
             .section_content {
-                width: 30rem;
+  
                 h1 {
-                    font-size: 1.5rem;
+                    font-size: 1.2.3rem;
                 }
                 p {
                     font-size: 0.8rem;
@@ -81,21 +79,131 @@ section {
             }
 
             .section_image {
-                width: 19rem;
+        
             }
+        }
+    }
+}
+
+
+/* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+
+@media screen and (max-width: 1024px) {
+    section {
+        height: 110vh;
+        .container {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            gap: 4%;
+            align-items: center;
+            justify-content: space-between;
+            .section_content {
+ 
+                h1 {
+                    font-size: 1.7rem;
+                }
+                p {
+                    margin: 1rem 0 1rem;
+                    font-size: 0.8rem;
+                }
+                a {
+                    margin-top: 1rem;
+                }
+            }
+
+            .section_image {
+        
+            }
+        }
+    }
+}
+
+/* ================= MEDIA QUERIES (r DEVICES) ================= */
+
+@media screen and (max-width: 800px) {
+
+    section {
+        height: 110vh;
+        .container {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            gap: 4%;
+            align-items: center;
+            justify-content: space-between;
+            .section_content {
+ 
+                h1 {
+                    font-size: 1.4rem;
+                }
+                p {
+                    margin: 1rem 0 1rem;
+                    font-size: 0.8rem;
+                }
+                a {
+                    margin-top: 1rem;
+                }
+            }
+
+            .section_image {
+                min-width: 0%;
+            }
+        }
+    }
+}
+
+/* ================= MEDIA QUERIES (semi SMALL DEVICES) ================= */
+
+@media screen and (max-width: 800px) {
+    section {
+        height: 160vh;
+
+
+        .container {
+            grid-template-columns: 1fr;
+
+            .section_image {
+                width: 70%;
+                margin: auto;
+            }
+            
         }
     }
 }
 
 /* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
 
+
 @media screen and (max-width: 600px) {
     section {
-        height: 280vh;
-        padding-top: 3rem;
+
+
 
         .container {
             grid-template-columns: 1fr;
+
+            .section_image {
+                width: 70%;
+                margin: auto;
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 382px) {
+    section {
+        height: 80vh;
+
+
+        .container {
+            grid-template-columns: 1fr;
+
+            .section_image {
+                width: 70%;
+                margin: auto;
+            }
             
         }
     }

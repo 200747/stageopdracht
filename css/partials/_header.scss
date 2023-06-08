@@ -154,12 +154,13 @@ header {
 @media screen and (max-width: 410px) {
     header {
         .header_footer {
-            height: 13rem;
+
             ul {
                 li {
-                    font-size: 0.95rem;
+                    font-size: 0.7rem;
                 }
             }
         }
     }
 }
+
