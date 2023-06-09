@@ -1,8 +1,6 @@
-#section1 {
+#section2 {
     display: grid;
     overflow: hidden;
-    padding-top: 270px;
-
     .container {
       display: grid;
       grid-template-columns: 36% 56%;
@@ -32,42 +30,47 @@
             }
 
             ul {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                column-gap: 4rem;
+
+
 
                 li {
                     color: $primary-headtext-color;
-                    font-size: 0.8rem;
+                    font-size: 1rem;
                     padding: 0.5rem;
                 }
 
-                li > .vinkje {
-                    margin-right: 0.5rem;
+                li > .oval {
                     vertical-align: middle;
+                }
+
+                li > small {
+                    text-align: left;
+                    float: right;
+                    min-width: 60%;
+                    word-wrap: break-word;
+                    font-weight: 500;
                 }
             }
       }
     }
-  }
+}
 
   /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
 
-@media screen and (max-width: 1024px) {
-    #section1 {
-
-
+  @media screen and (max-width: 1024px) {
+    #section2 {
         .container {
-            gap: 2%;
-            grid-template-columns: 36% 62%;
+            display: grid;
+            grid-template-columns: 38% 57%;
+            gap: 5%;
             .section_content {
-
+                width: 110%;
                 h1 {
-                    font-size: 1.2rem;
+                    font-size: 1.8rem;
                 }
                 p {
                     margin: 0.5rem 0 1rem;
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                 }
 
                 a {
@@ -77,8 +80,7 @@
 
             .section_image {
 
-                min-width: 100%;
-                gap: 4%;
+
             }
         }
     }
@@ -86,23 +88,31 @@
 
   /* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
 
-@media screen and (max-width: 800px) {
-    #section1 {
-        padding-top: 1rem;
-        padding-top: 310px;
+  @media screen and (max-width: 800px) {
+    #section2 {
 
         .container {
             grid-template-columns: 1fr;
+
+            .section_content {
+                width: 100%;
+                h1 {
+
+                }
+                p {
+
+                }
+
+                a {
+
+            }
+
+            .section_image {
+
+            }
+            
+        }
             
         }
     }
 }
-
-
-  /* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
-
-  @media screen and (max-width: 600px) {
-    #section1 {
-        padding-top: 190px;
-    }
-  }

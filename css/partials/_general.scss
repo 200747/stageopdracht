@@ -45,6 +45,14 @@ section {
     @include button($white-color, $primary-color);
 }
 
+.btn2 {
+    @include button2();
+}
+
+.btn2-primary {
+    @include button2($white-color, $primary-color);
+}
+
 /* ================= MEDIA QUERIES (BASE DEVICES) ================= */
 
 @media screen and (max-width: 1200px) {
