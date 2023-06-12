@@ -62,9 +62,11 @@ nav {
 @media screen and (max-width: 1200px) {
     nav {
         .container {
+
             a {
+                font-size: 0.7rem;
             &.ikhebinteresse {
-                margin-right: 2rem; /* Increase the margin-left value to create a bigger gap */
+                margin-right: 1rem; /* Increase the margin-left value to create a bigger gap */
             }
         }
         }

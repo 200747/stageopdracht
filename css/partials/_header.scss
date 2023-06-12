@@ -1,5 +1,5 @@
 header {
-    height: 80vh;
+    
     display: grid;
     place-items: center;
     position: relative;
@@ -80,7 +80,6 @@ header {
 
 @media screen and (max-width: 1024px) {
     header {
-        height: 70vh;
         padding-top: 3rem;
 
             .header_footer {
@@ -106,7 +105,6 @@ header {
 
 @media screen and (max-width: 600px) {
     header {
-        height: 100%;
         padding-top: 3rem;
         
         .header_image {

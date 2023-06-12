@@ -1,0 +1,98 @@
+#appointment {
+    .container {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        gap: 6%;
+
+        .info {
+            h2 {
+
+            }
+
+            p {
+                margin: 0.5rem 0 2rem;
+            }
+
+            .contact {
+                display: flex; /* Use flexbox instead of grid */
+                column-gap: 2rem;
+                flex-grow: 2;
+
+                a {
+                    display: flex; /* Use flexbox for the div elements */
+                    align-items: center; /* Align items vertically */
+                    gap: 0.5rem; /* Add gap between image and text */
+                    color: $primary-color-variant;
+                    font-weight: 700;
+
+                    img {
+                        width: 1.1rem;
+                    }
+                }
+        }
+    
+    }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+
+            .checkbox {
+                input[type="checkbox"] {
+                    margin-right: 0.4rem;
+                }
+            }
+
+            .input-wrapper {
+                display: flex;
+                gap: 1rem;
+                    .postcode input {
+                        margin-right: 0px;
+                    }
+                    .woonplaats input {
+                        margin-right: 280px;
+                    }
+              }
+              
+
+            .form_group {
+                label {
+                    font-size: 0.85rem;
+                    margin-bottom: 0.4rem;
+                    display: inline-block;
+                    font-weight: 600;
+                }
+
+
+                input, textarea, select {
+                    background: $white-color;
+                    padding: 0.85rem 1rem;
+                    display: block;
+                    width: 100%;
+                    border-radius: 0.4rem;
+                    resize: none;
+                    appearance: none;
+                    border: 2px solid #b2b2b2;
+                }
+            }
+        }
+    }
+}
+
+
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ========================== */
+
+@media screen and (max-width: 600px) {
+    #appointment {
+        .container {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+
+          .info {
+            h2, p {
+                text-align: center;
+            }
+          }
+        }
+    }
+}

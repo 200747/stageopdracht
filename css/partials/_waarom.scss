@@ -1,8 +1,7 @@
 #section1 {
     display: grid;
     overflow: hidden;
-    padding-top: 2rem;
-
+    margin-top: 4rem;
     .container {
       display: grid;
       grid-template-columns: 36% 56%;
@@ -89,7 +88,6 @@
 @media screen and (max-width: 800px) {
     #section1 {
 
-
         .container {
             grid-template-columns: 1fr;
             
@@ -102,6 +100,6 @@
 
   @media screen and (max-width: 600px) {
     #section1 {
-  
+        margin-top: 3rem;
     }
   }
