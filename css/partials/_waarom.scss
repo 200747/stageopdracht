@@ -1,11 +1,11 @@
 #section1 {
     display: grid;
-    overflow: hidden;
+
     margin-top: 4rem;
     .container {
       display: grid;
-      grid-template-columns: 36% 56%;
-      gap: 8%;
+      grid-template-columns: 38% 58%;
+      gap: 4%;
       align-items: center;
 
 
@@ -91,6 +91,9 @@
         .container {
             grid-template-columns: 1fr;
             
+            .section_content { 
+     
+            }
         }
     }
 }
@@ -101,5 +104,24 @@
   @media screen and (max-width: 600px) {
     #section1 {
         margin-top: 3rem;
+        .container {
+            .section_content {
+                ul {
+                    grid-template-columns: 1fr;
+    
+    
+                    li {
+                        color: $primary-headtext-color;
+                        font-size: 0.8rem;
+                        padding: 0.5rem;
+                    }
+    
+                    li > .vinkje {
+                        margin-right: 0.5rem;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
     }
   }

@@ -3,8 +3,8 @@
     overflow: hidden;
     .container {
       display: grid;
-      grid-template-columns: 36% 56%;
-      gap: 8%;
+      grid-template-columns: 38% 58%;
+      gap: 4%;
       align-items: center;
 
   
@@ -27,6 +27,11 @@
             a {
                 margin-top: 2rem;
                 font-weight: 500;
+
+                img {
+                    width: 1rem;
+                    
+                }
             }
 
             ul {
@@ -77,6 +82,28 @@
                 a {
                     margin-top: 1rem;
                 }
+
+                ul {
+
+                    li {
+                        color: $primary-headtext-color;
+                        font-size: 0.9rem;
+                        padding: 0.5rem;
+                    }
+
+                    li > .oval {
+                        vertical-align: middle;
+                        padding: 0.2rem;
+                    }
+
+                    li > small {
+                        text-align: left;
+                        float: right;
+                        min-width: 60%;
+                        word-wrap: break-word;
+                        font-weight: 500;
+                    }
+            }
             }
 
             .section_image {
@@ -117,3 +144,54 @@
         }
     }
 }
+
+  /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+
+  @media screen and (max-width: 400px) { 
+    #section2 {
+        .container {
+
+            .section_content {
+
+                h1 {
+
+                }
+                p {
+
+                }
+
+                a {
+
+                }
+
+                ul {
+
+                    li {
+                        color: $primary-headtext-color;
+                        font-size: 0.9rem;
+                        padding: 0.5rem;
+                    }
+
+                    li > .oval {
+                        vertical-align: middle;
+                        padding: 0.2rem;
+                    }
+
+                    li > small {
+                        text-align: left;
+                        float: right;
+                        min-width: 50%;
+                        word-wrap: break-word;
+                        font-weight: 500;
+                    }
+            }
+            }
+
+            .section_image {
+
+
+            }
+        }
+    }
+}
+  

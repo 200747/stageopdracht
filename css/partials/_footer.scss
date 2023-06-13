@@ -1,0 +1,98 @@
+footer {
+    width: 100vw;
+    height: 10rem;
+    z-index: 99;
+    display: grid;
+    place-items: center;
+    background-color: white;
+
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        justify-content: space-between;
+
+        .leftfooter {
+            display: flex;
+            gap: 2rem;
+            img {
+                width: 10rem;
+            }
+
+        }
+
+
+
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+
+
+            }
+
+
+            a {
+                font-weight: 400;
+                font-size: 0.9rem;
+                position: relative;
+                color: gray;
+                text-decoration: underline;
+
+                
+                  &.ikhebinteresse {
+
+                  }
+
+
+
+
+            }
+
+
+    }
+}
+
+
+
+
+    /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+
+@media screen and (max-width: 800px) {
+    footer {
+        .container {
+            gap: 0.8rem;
+
+            .leftfooter {
+                gap: 0.8rem;
+    
+            }
+        }
+    }
+}
+
+    /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+
+    @media screen and (max-width: 600px) {
+        footer {
+            height: 15rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            .container {
+                display: grid;
+
+                .leftfooter {
+                    display: grid;
+                    padding-bottom: 1rem;
+                }
+
+                ul {
+                    display: grid;
+                    gap: 0.3rem;
+                }
+            }
+        }
+    }
