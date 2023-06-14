@@ -14,12 +14,12 @@
 <body>
     <nav>
         <div class="container">
-            <img src="assets/logo.svg" href="h3" class="nav_logo">
+            <a href="#header"><img src="assets/logo.svg" class="nav_logo"></a>
 
             <ul id="nav_items">
-                <li class="hidden-li"><a href="#privatelease">Private Lease</a></li>
-                <li class="hidden-li"><a href="#deauto">De auto</a></li>
-                <li class="hidden-li"><a href="#ikhebinteresse" class="ikhebinteresse">Ik heb interesse</a></li>
+                <li class="hidden-li"><a href="#section1">Private Lease</a></li>
+                <li class="hidden-li"><a href="#section2">De auto</a></li>
+                <li class="hidden-li"><a href="#contact" class="ikhebinteresse">Ik heb interesse</a></li>
                 <li class="shown-li"><object data="./assets/Group_22.svg" alt=""></object><a href="#email" class="hidden-li">sales@starlease.nl</a></li>
                 <li class="shown-li"><object data="assets/iconfinder_phone-call-support_2796466.svg" alt=""></object><a href="#phone" class="hidden-li">0543 - 123 456</a></li>
             </ul>
@@ -28,7 +28,7 @@
 
     <!---========================== END OF NAV ==========================-->
 
-    <header>
+    <header id="header">
         <div class="header_image">
             <img src="assets/image-2.png" class="image_header" alt="Header Image">
         </div>
@@ -39,7 +39,7 @@
                     Het nieuwe autorijden. Zonder zorgen, met het grootste gemak, voor de scherpste prijs. 
                     Bij StarLease regelen we dat voor u!
                 </p>
-                <a href="#meerweten" class="btn">Ik wil meer weten -></a>
+                <a href="#section1" class="btn">Ik wil meer weten -></a>
             </div>
         </div>
         <div class="header_footer">
@@ -87,9 +87,10 @@
                     <li><object class="oval" data="assets/Oval.svg" type=""></object><b>Transmissie</b><small>Handgeschakelt</small></li>
                     <li><object class="oval" data="assets/Oval.svg" type=""></object><b>Vermorgen</b><small>73 PK</small></li>
                 </ul>
-                <a href="#kiesvoorprivatelease" class="btn2">Bekijk alle specificaties <img src="assets/icon.svg" alt="plus"></a>
+                <a href="#kiesvoorprivatelease" class="btn2">Bekijk alle specificaties <img class="plus" src="assets/icon.svg" alt="plus"></a>
             </div>
             <div class="section_image">
+                <p>Op basis van 10.000 km/jr<br>looptijd 60 maanden</p>
                 <img src="/assets/auto.png" alt="Auto">
             </div>
         </div>
@@ -97,7 +98,7 @@
 
     <!---========================== END OF SECTION 2 ==========================-->
 
-    <section id="appointment">
+    <section id="contact">
         <div class="container">
             <div class="info">
                 <h2>Meer weten over starlease?</h2>
@@ -114,23 +115,23 @@
             <form>
                 <div class="form_group">
                     <label for="name">Voor- en achternaam</label>
-                    <input type="text" placeholder="Enter Your Name" name="Patient's Name" id="name" required>
+                    <input type="text" name="Patient's Name" id="name" required>
                 </div>
                 <div class="form_group">
                     <label for="name">Adres</label>
-                    <input type="text" placeholder="Enter Your Name" name="Patient's Name" id="name" required>
+                    <input type="text" name="Patient's Name" id="name" required>
                 </div>
                 <div class="input-wrapper">
                     <div class="form_group">
                         <div class="postcode">
                             <label for="name">Postcode</label>
-                            <input type="text" placeholder="Enter Your Name" name="Patient's Name" id="name" required>
+                            <input type="text" name="Patient's Name" id="name" required>
                         </div>
                     </div>
                     <div class="form_group">
                         <div class="woonplaats">
                             <label for="name">Woonplaats</label>
-                            <input type="text" placeholder="Enter Your Name" name="Patient's Name" id="name" required>
+                            <input type="text" name="Patient's Name" id="name" required>
                         </div>
                     </div>
                 </div>
@@ -138,18 +139,18 @@
                     <div class="form_group">
                         <div class="email">
                             <label for="name">Emailadres</label>
-                            <input type="text" placeholder="Enter Your Name" name="Patient's Name" id="name" required>
+                            <input type="text" name="Patient's Name" id="name" required>
                         </div>
                     </div>
                     <div class="form_group">
                         <div class="telefoon">
                             <label for="name">Telefoon</label>
-                            <input type="text" placeholder="Enter Your Name" name="Patient's Name" id="name" required>
+                            <input type="text" name="Patient's Name" id="name" required>
                         </div>
                     </div>
                 </div>
                 <div class="checkbox">
-                    <div class="akkoord"><input type="checkbox" name="Voorwaarden" id="voorwaarden">Ik ga akkoord met de algemene voorwaarden</div>
+                    <div class="akkoord"><input type="checkbox" name="Voorwaarden" id="voorwaarden">Ik ga akkoord met de <span style="text-decoration: underline;">algemene voorwaarden</span></div>
                     <div class="versturen"><input type="submit" value="Versturen ->"></div>
                 </div>
             </form>
@@ -174,5 +175,6 @@
           
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
