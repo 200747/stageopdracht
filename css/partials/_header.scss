@@ -4,6 +4,12 @@ header {
     place-items: center;
     position: relative;
     
+    .blauwevormpje {
+        @include blauwevormpje;
+        min-width: 2%;
+        left: 2.5%;
+        width: 28px;
+    }
     .header_image {
         width: $container-full;
         position: relative;
@@ -108,6 +114,13 @@ header {
     header {
         padding-top: 3rem;
         
+        .blauwevormpje {
+            @include blauwevormpje;
+            min-width: 3.5%;
+            left: 80%;
+            top: 337px;
+            width: 40px;
+        }
         .header_image {
             width: 100%;
             
