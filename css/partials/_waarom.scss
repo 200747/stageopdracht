@@ -3,11 +3,29 @@
     margin-top: 4rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    .blauwevormpje {
+        @include blauwevormpje;
+        position: relative;
+        min-width: 2%;
+        width: 28px;
+
+    }
+
+    .blauwevormpje2 {
+        @include blauwevormpje;
+        position: relative;
+        min-width: 2%;
+        width: 28px;
+        right: 0 !important;
+    }
     .container {
       display: grid;
       grid-template-columns: 38% 58%;
       gap: 4%;
       align-items: center;
+
+
 
 
   

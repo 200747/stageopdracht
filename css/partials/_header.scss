@@ -10,6 +10,23 @@ header {
         left: 2.5%;
         width: 28px;
     }
+    
+    .rozevormpje {
+        @include rozevormpje;
+        min-width: 2%;
+        left: 82.5%;
+        width: 28px;
+        top: 100px;
+    }
+
+    // .triangle {
+    //     @include triangle;
+    //     min-width: 2%;
+    //     right: 0%;
+    //     width: 28px;
+    //     top: 160px;
+    //     margin-right: 1.2rem;
+    // }
     .header_image {
         width: $container-full;
         position: relative;
@@ -118,8 +135,12 @@ header {
             @include blauwevormpje;
             min-width: 3.5%;
             left: 80%;
-            top: 337px;
+            top: 339px;
             width: 40px;
+        }
+
+        .rozevormpje {
+            display: none;
         }
         .header_image {
             width: 100%;

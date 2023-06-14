@@ -34,11 +34,29 @@
     }
 }
 
-@mixin blauwevormpje() {
+@mixin blauwevormpje($blauwColor: $primary-color-variant) {
     position: absolute;
     content: '';
     height: 15px;
-    background: #008DFF;
+    background: $blauwColor;
     transform: skew(-20deg);
     z-index: 20;
 }
+
+@mixin rozevormpje($buttonColor: $secondary-color) {
+    position: absolute;
+    content: '';
+    height: 15px;
+    background: $buttonColor;
+    transform: skew(-20deg);
+    z-index: 20;
+}
+
+// @mixin triangle($height: 141px, $blauwColor: $primary-color-variant) {
+//     position: absolute;
+//     z-index: 20;
+//     border-bottom: $height solid $blauwColor;
+//     border-right: ($height / 2.6) solid transparent;
+//     border-left: ($height / 1.8) solid transparent;
+//     transform: rotate(-90deg);
+//   }
