@@ -1,10 +1,32 @@
+
 #contact {
     background-color: #F6F7F8;
+    position: relative;
+
+    .blauwevormpje {
+        @include blauwevormpje;
+        min-width: 2%;
+        left: 40%;
+        width: 28px;
+    }
+
+    .triangle {
+        clip-path: polygon(0 60%, 0% 100%, 34% 100%);
+        bottom: 0;
+        z-index: 20;
+        position: absolute;
+        background-color: $primary-color-variant;
+        width: 200px;
+    }
+
     .container {
         display: grid;
         grid-template-columns: 40% 54%;
         gap: 6%;
         padding: 4rem 0rem;
+        position: relative;
+
+
         .info {
             h2 {
                 font-size: 3.5rem;
@@ -97,6 +119,7 @@
                 font-weight: 600;
             }
         }
+        
     }
 }
 
@@ -235,6 +258,11 @@
 
 @media screen and (max-width: 800px) {
     #contact {
+
+        .blauwevormpje {
+
+            left: 85%;
+        }
         .container {
           grid-template-columns: 1fr;
           gap: 2rem;

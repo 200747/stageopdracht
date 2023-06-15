@@ -4,20 +4,15 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
 
-    .blauwevormpje {
-        @include blauwevormpje;
-        position: relative;
-        min-width: 2%;
-        width: 28px;
 
-    }
 
     .blauwevormpje2 {
         @include blauwevormpje;
-        position: relative;
-        min-width: 2%;
-        width: 28px;
-        right: 0 !important;
+        width: 30px;
+        right: 0;
+        margin-bottom: 50vw;
+        margin-right: 10rem;
+
     }
     .container {
       display: grid;
@@ -26,7 +21,12 @@
       align-items: center;
 
 
-
+      .blauwevormpje {
+        @include blauwevormpje;
+        width: 30px;
+        margin-left: 3rem;
+        margin-top: 41.7vw;
+    }
 
   
       .section_content {
@@ -74,10 +74,23 @@
 @media screen and (max-width: 1024px) {
     #section1 {
 
+        .blauwevormpje2 {
+            @include blauwevormpje;
+            min-width: 2%;
+            right: 0;
+            margin-bottom: 50vw;
+            margin-right: 4rem;
+    
+        }
 
         .container {
             gap: 2%;
             grid-template-columns: 36% 62%;
+
+            .blauwevormpje {
+                margin-top: 43.2vw;
+            }
+
             .section_content {
 
                 h1 {
@@ -107,8 +120,16 @@
 @media screen and (max-width: 800px) {
     #section1 {
 
+        .blauwevormpje2 {
+            display: none;
+    
+        }
         .container {
             grid-template-columns: 1fr;
+
+            .blauwevormpje {
+                display: none;
+            }
             
             .section_content { 
      

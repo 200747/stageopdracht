@@ -3,15 +3,21 @@
     overflow: hidden;
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    .rozevormpje {
+        @include rozevormpje;
+        min-width: 2%;
+        left: 62.5%;
+        width: 28px;
+    }
     .container {
       display: grid;
       grid-template-columns: 38% 58%;
       gap: 4%;
       align-items: center;
-
   
       .section_content {
-        margin-bottom: 50%;
+
         top: 0;
             h1 {
                 font-size: 2rem;
@@ -63,13 +69,26 @@
       }
       
       .section_image {
-
+        margin-top: 10rem;
         p {
             font-style: italic;
+            font-size: 1rem;
+            padding: 20px;
+        }
+
+        .carcard {
+            clip-path: polygon(22% 0, 100% 0, 100% 0, 78% 100%, 0 100%, 0 100%);
+            background-color: $primary-color-variant;
+            position: absolute;
+            right: 0;
+            width: 20%;
+            margin-right: 9%;
+            z-index: -1;
         }
 
         img {
-            width: 100%;
+
+            width: 90%;
         }
       }
     }
@@ -133,6 +152,10 @@
   @media screen and (max-width: 800px) {
     #section2 {
 
+        .rozevormpje {
+            display: none;
+        }
+
         .container {
             grid-template-columns: 1fr;
 
@@ -149,10 +172,12 @@
 
             }
 
-            .section_image {
 
-            }
             
+        }
+
+        .section_image {
+            margin-top: 0rem;
         }
             
         }

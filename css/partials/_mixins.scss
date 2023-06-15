@@ -52,11 +52,31 @@
     z-index: 20;
 }
 
-// @mixin triangle($height: 141px, $blauwColor: $primary-color-variant) {
-//     position: absolute;
-//     z-index: 20;
-//     border-bottom: $height solid $blauwColor;
-//     border-right: ($height / 2.6) solid transparent;
-//     border-left: ($height / 1.8) solid transparent;
-//     transform: rotate(-90deg);
-//   }
+@mixin triangle($height: 141px, $blauwColor: $primary-color-variant) {
+    position: absolute;
+    z-index: 20;
+    border-bottom: $height solid $blauwColor;
+    border-right: ($height / 2.6) solid transparent;
+    border-left: ($height / 1.8) solid transparent;
+    transform: rotate(-90deg);
+  }
+
+  @mixin triangle2($height: 141px, $blauwColor: $primary-color-variant) {
+    position: absolute;
+    z-index: 20;
+    width: 0;
+    height: 0;
+    border-bottom: ($height /2) solid $blauwColor;
+    border-right: ($height / 2) solid transparent;
+    border-left: ($height / 2) solid transparent;
+    transform: rotate(-135deg);
+  }
+
+  @mixin idealeblauwevormpje($blauwColor: $primary-color-variant) {
+    position: absolute;
+    content: '';
+    height: 15px;
+    background: $blauwColor;
+    transform: skew(-20deg);
+    z-index: 20;
+}
