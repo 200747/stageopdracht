@@ -70,21 +70,29 @@
       
       .section_image {
         margin-top: 10rem;
+        position: relative;
+        .carcard {
+            clip-path: polygon(22% 0, 100% 0, 100% 0, 78% 100%, 0 100%, 0 100%);
+            background-color: $primary-color-variant;
+            position: absolute;
+            width: 50%;
+            height: 170px;
+            margin-left: 20rem;
+            right: 0;
+            z-index: -1;
+
+            h1 {
+                margin-left: 5rem;
+            }
+
+        }
+
         p {
             font-style: italic;
             font-size: 1rem;
             padding: 20px;
         }
 
-        .carcard {
-            clip-path: polygon(22% 0, 100% 0, 100% 0, 78% 100%, 0 100%, 0 100%);
-            background-color: $primary-color-variant;
-            position: absolute;
-            right: 0;
-            width: 20%;
-            margin-right: 9%;
-            z-index: -1;
-        }
 
         img {
 
