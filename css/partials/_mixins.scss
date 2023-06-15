@@ -52,21 +52,21 @@
     z-index: 20;
 }
 
-@mixin triangle($height: 141px, $blauwColor: $primary-color-variant) {
+@mixin triangle($height: 141px, $blueColor: $primary-color-variant) {
     position: absolute;
     z-index: 20;
-    border-bottom: $height solid $blauwColor;
+    border-bottom: $height solid $blueColor;
     border-right: ($height / 2.6) solid transparent;
     border-left: ($height / 1.8) solid transparent;
     transform: rotate(-90deg);
   }
 
-  @mixin triangle2($height: 141px, $blauwColor: $primary-color-variant) {
+  @mixin triangle2($height: 141px, $blueColor: $primary-color-variant) {
     position: absolute;
     z-index: 20;
     width: 0;
     height: 0;
-    border-bottom: ($height /2) solid $blauwColor;
+    border-bottom: ($height /2) solid $blueColor;
     border-right: ($height / 2) solid transparent;
     border-left: ($height / 2) solid transparent;
     transform: rotate(-135deg);
