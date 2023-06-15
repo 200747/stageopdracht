@@ -34,11 +34,11 @@
     }
 }
 
-@mixin blauwevormpje($blauwColor: $primary-color-variant) {
+@mixin blauwevormpje($blueColor: $primary-color-variant) {
     position: absolute;
     content: '';
     height: 15px;
-    background: $blauwColor;
+    background: $blueColor;
     transform: skew(-20deg);
     z-index: 20;
 }
@@ -72,11 +72,11 @@
     transform: rotate(-135deg);
   }
 
-  @mixin idealeblauwevormpje($blauwColor: $primary-color-variant) {
+  @mixin idealeblauwevormpje($blueColor: $primary-color-variant) {
     position: absolute;
     content: '';
     height: 15px;
-    background: $blauwColor;
+    background: $blueColor;
     transform: skew(-20deg);
     z-index: 20;
 }
