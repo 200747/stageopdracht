@@ -69,24 +69,27 @@
       }
       
       .section_image {
-        margin-top: 10rem;
-        position: relative;
+        .topsection {
+            gap: 2rem;
+            display: flex;
+
         .carcard {
             clip-path: polygon(22% 0, 100% 0, 100% 0, 78% 100%, 0 100%, 0 100%);
             background-color: $primary-color-variant;
-            position: relative;
-
-            width: 45%;
-            height: 150px;
-            margin-right: 6rem;
-            float: right;
+            margin-right: 13%;
+            width: 23%;
+            height: 10vw;
+            right: 0;
+            position: absolute;
             z-index: -1;
+            margin-top: 4.5rem;
 
             h1 {
-                margin: 0 auto;
+                text-align: center;
+                margin-right: 6%;
                 margin-top: 1rem;
                 font-weight: 600;
-                font-size: 4rem;
+                font-size: 4vw;
                 color: white;
                 float: right;
                 width: 80%;
@@ -94,7 +97,7 @@
             h2 {
                 margin: 0 auto;
                 color: white;
-                font-size: 1rem;
+                font-size: 1vw;
                 font-weight: 500;
                 float: right;
                 width: 80%;
@@ -103,20 +106,23 @@
         }
 
         p {
+            text-align: center;
             font-style: italic;
             font-size: 1rem;
-            padding: 20px;
             color: $gray-color;
-            float: right;
+            position: absolute;
+            margin-top: 5rem;
         }
 
+    }
 
         img {
-
+            margin-top: 10rem;
             width: 90%;
         }
       }
     }
+
 }
 
   /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
