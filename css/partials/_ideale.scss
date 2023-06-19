@@ -65,6 +65,7 @@
         }
 
         .section_image {
+            height: 80%;
             .topsection {
                 gap: 2rem;
                 display: flex;
@@ -218,11 +219,11 @@
                 p {
                     right: 0;;
                     padding: 2rem;
-                    margin-top: 78%;
+                    margin-top: 80%;
                 }
                 img {
                     padding-top: 3rem;
-                    padding-bottom: 2rem;
+                    padding-bottom: 6rem;
                     margin: 0 auto;
                 }
             }
