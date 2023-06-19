@@ -10,15 +10,15 @@
         left: 62.5%;
         width: 28px;
     }
-    .container {
-      display: grid;
-      grid-template-columns: 38% 58%;
-      gap: 4%;
-      align-items: center;
-  
-      .section_content {
 
-        top: 0;
+    .container {
+        display: grid;
+        grid-template-columns: 38% 58%;
+        gap: 4%;
+        align-items: center;
+
+        .section_content {
+            top: 0;
             h1 {
                 font-size: 2rem;
                 line-height: 1.1;
@@ -30,7 +30,7 @@
                 margin: 1rem 0 2rem;
                 color: $gray-color;
                 font-size: 1.1rem;
-            }   
+            }
 
             a {
                 margin-top: 2rem;
@@ -39,91 +39,87 @@
                 gap: 0.5rem;
                 img {
                     width: 1.2rem;
-
                 }
             }
 
             ul {
-
-
-
                 li {
                     color: $primary-headtext-color;
                     font-size: 1rem;
                     padding: 0.5rem;
-                }
 
-                li > .oval {
-                    vertical-align: middle;
-                    padding: 0.2rem;
-                }
+                    > .oval {
+                        vertical-align: middle;
+                        padding: 0.2rem;
+                    }
 
-                li > small {
-                    text-align: left;
+                    > small {
+                        text-align: left;
+                        float: right;
+                        min-width: 60%;
+                        word-wrap: break-word;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .section_image {
+            .topsection {
+                gap: 2rem;
+                display: flex;
+            }
+
+            .carcard {
+                clip-path: polygon(22% 0, 100% 0, 100% 0, 78% 100%, 0 100%, 0 100%);
+                background-color: $primary-color-variant;
+                margin-right: 9%;
+                width: 23%;
+                height: 10vw;
+                right: 0;
+                position: absolute;
+                z-index: -1;
+                margin-top: 4.5rem;
+
+                h1 {
+                    text-align: center;
+                    margin-right: 6%;
+                    margin-top: 1rem;
+                    font-weight: 600;
+                    font-size: 4vw;
+                    color: white;
                     float: right;
-                    min-width: 60%;
-                    word-wrap: break-word;
+                    width: 80%;
+                }
+
+                h2 {
+                    margin: 0 auto;
+                    color: white;
+                    font-size: 1vw;
                     font-weight: 500;
+                    float: right;
+                    width: 80%;
                 }
             }
-      }
-      
-      .section_image {
-        .topsection {
-            gap: 2rem;
-            display: flex;
 
-        .carcard {
-            clip-path: polygon(22% 0, 100% 0, 100% 0, 78% 100%, 0 100%, 0 100%);
-            background-color: $primary-color-variant;
-            margin-right: 13%;
-            width: 23%;
-            height: 10vw;
-            right: 0;
-            position: absolute;
-            z-index: -1;
-            margin-top: 4.5rem;
-
-            h1 {
+            p {
                 text-align: center;
-                margin-right: 6%;
-                margin-top: 1rem;
-                font-weight: 600;
-                font-size: 4vw;
-                color: white;
-                float: right;
-                width: 80%;
-            }
-            h2 {
-                margin: 0 auto;
-                color: white;
-                font-size: 1vw;
-                font-weight: 500;
-                float: right;
-                width: 80%;
+                font-style: italic;
+                font-size: 1rem;
+                color: $gray-color;
+                position: absolute;
+                margin-top: 5rem;
             }
 
+            img {
+                margin-top: 10rem;
+                width: 90%;
+            }
         }
-
-        p {
-            text-align: center;
-            font-style: italic;
-            font-size: 1rem;
-            color: $gray-color;
-            position: absolute;
-            margin-top: 5rem;
-        }
-
     }
-
-        img {
-            margin-top: 10rem;
-            width: 90%;
-        }
-      }
-    }
-
 }
+
+
 
   /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
 
@@ -191,28 +187,45 @@
 
   @media screen and (max-width: 800px) {
     #section2 {
-
         .rozevormpje {
             display: none;
         }
-
         .container {
             grid-template-columns: 1fr;
-
             .section_content {
                 width: 100%;
+            }
+            .section_image {
 
+                .topsection {
 
-            
-        }
+                }
+                .carcard {
+                    margin-top: 0rem;
+                    width: 70%;
+                    height: 15%;
+                    justify-content: center;
+                    h1 {
+                        font-size: 12vw;
+                    }
+                    h2 {
+                        font-size: 4vw;
 
-        .section_image {
-            margin-top: 0rem;
-        }
-            
+                    }
+                }
+                p {
+                    right: 0;;
+                    padding: 2rem;
+                }
+                img {
+                    margin-bottom: 5rem;
+                }
+            }
         }
     }
 }
+
+
 
   /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
 
